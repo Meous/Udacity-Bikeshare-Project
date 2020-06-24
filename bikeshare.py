@@ -26,8 +26,8 @@ def get_filters():
     print('Hey there! Welcome and enjoy exploring US bikeshare data!\n')
   
     # Accepting user input for city (chicago, new york city, washington). 
-    cities = "\n1. chicago \n2. new york city \n3. washington \n"
-    print('List of cities:', cities.title())
+    
+    print('List of cities: Chicago, New York City, Washington')
 
     city = input("Kindly enter city name here:\n").lower()
 
@@ -190,7 +190,7 @@ def user_stats(df):
     try:
         print('Count of genders:',df['Gender'].value_counts())
     except:
-        print('Gender data is not available for this filter')
+        print('Gender data is not available for your chosen filter')
     # TO DO: Display earliest, most recent, and most common year of birth
     try:
         earliest_year = df['Birth Year'].min()
@@ -198,7 +198,7 @@ def user_stats(df):
         common_year = df['Birth Year'].mode().values[0]
         print("Earlierst Year:{}\nRecent Year:{}\nCommon Year:{}".format(earliest_year,recent_year,common_year)) 
     except:
-        print('Birth Year data is not available for this filter')
+        print('Birth Year data is not available for your chosen filter')
         
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*70)
