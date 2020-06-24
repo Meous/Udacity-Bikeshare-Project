@@ -26,8 +26,8 @@ def get_filters():
     print('Hey there! Welcome and enjoy exploring US bikeshare data!\n')
   
     # Accepting user input for city (chicago, new york city, washington). 
-    cities = "\n1. chicago \n2. new york city \n3. washington \n"
-    print('List of cities:', cities.title())
+    
+    print('List of cities: Chicago, New York City, Washington')
 
     city = input("Kindly enter city name here:\n").lower()
 
