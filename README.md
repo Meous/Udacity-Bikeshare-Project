@@ -49,3 +49,9 @@ counts of each user type
 counts of each gender (only available for NYC and Chicago)
 earliest, most recent, most common year of birth (only available for NYC and Chicago)
 
+### Files or Dataset used
+Three city dataset files were used and they are listed below:
+
+* chicago.csv
+* new_york_city.csv
+* washington.csv
